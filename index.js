@@ -21,6 +21,6 @@ app.get("*", (req, res) => {
   res.status(404).json("This page doesn't exist !");
 });
 
-app.listen(3100, (req, res) => {
+app.listen(process.env.SERVER_PORT, (req, res) => {
   console.log("Server started");
 });
